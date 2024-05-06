@@ -1,24 +1,24 @@
-import React from "react"
-import style from "./step4.module.css"
-import Layout from "../layout"
-import {useForm} from "react-hook-form"
+import React from "react";
+import style from "./step4.module.css";
+import Layout from "../layout";
+import { useForm } from "react-hook-form";
 
-const Step4 = ({onStepSubmit, data, ...props}) => {
-  const {billingType, activePlan} = data.step2
-  const {selectedAddons} = data.step3
+const Step4 = ({ onStepSubmit, data, ...props }) => {
+  const { billingType, activePlan } = data.step2;
+  const { selectedAddons } = data.step3;
 
   const total = () => {
     return selectedAddons.reduce(
       (acc, curr) => acc + curr.priceAmount,
       activePlan.priceAmount
-    )
-  }
+    );
+  };
 
   const onSubmit = () => {
-    onStepSubmit("step4", "step5")
-  }
+    onStepSubmit("step4", "step5");
+  };
 
-  const {handleSubmit} = useForm()
+  const { handleSubmit } = useForm();
 
   return (
     <Layout {...props} handleFormSubmit={handleSubmit(onSubmit)}>
@@ -50,7 +50,7 @@ const Step4 = ({onStepSubmit, data, ...props}) => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Step4
+export default Step4;

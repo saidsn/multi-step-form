@@ -1,5 +1,5 @@
-import React from "react"
-import style from "./customInput.module.css"
+import React from "react";
+import style from "./customInput.module.css";
 
 const CustomInput = ({
   id,
@@ -30,7 +30,7 @@ const CustomInput = ({
         placeholder={placeholder}
       />
     </div>
-  )
-}
+  );
+};
 
-export default CustomInput
+export default CustomInput;

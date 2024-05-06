@@ -6,8 +6,9 @@
 }
 
 .input_top {
-  display: flex;
   font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
 }
 .form_input {
   padding: 1.2rem;
@@ -27,9 +28,6 @@
 }
 
 .error_message {
-  position: absolute;
-  top: 0;
-  right: 0;
   font-size: 1.2rem;
   color: var(--strawberry-red);
 }
@@ -38,5 +36,10 @@
 }
 
 .error {
-  border-color: red;
+  border-color: var(--strawberry-red);
+}
+@media (max-width: 576px) {
+  .input_top {
+    flex-direction: column;
+  }
 }
