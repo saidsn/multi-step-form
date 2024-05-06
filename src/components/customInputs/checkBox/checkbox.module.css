@@ -36,3 +36,18 @@
 .error {
   border-color: red;
 }
+
+@media (max-width: 576px) {
+  .label_item {
+    padding: 1.6rem;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .price {
+    font-size: 1.4rem;
+  }
+}

@@ -4,15 +4,15 @@
   padding: 1.2rem;
   background-color: var(--white);
   border-radius: 1.6rem;
-  min-height: 90vh;
   min-width: 65vw;
+  min-height: 90vh;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 @media (max-width: 576px) {
   .multi_step {
     flex-direction: column;
-    width: 75vw;
+    width: 50vw;
     height: max-content;
-    margin-top: 22rem;
+    margin-top: 20rem;
   }
 }

@@ -5,3 +5,11 @@
 .step_subtitle {
   color: var(--cool-gray);
 }
+@media (max-width: 576px) {
+  .step_title {
+    font-size: 3rem;
+  }
+  .step_subtitle {
+    font-size: 1.4rem;
+  }
+}

@@ -60,3 +60,16 @@
   font-size: 1.8rem;
   font-weight: 700;
 }
+
+@media (max-width: 576px) {
+  .main_row {
+    padding: 1.6rem;
+  }
+  .top_row,
+  .bottom_row {
+    padding: 1.6rem;
+  }
+  .total_row {
+    padding: 1.6rem;
+  }
+}
